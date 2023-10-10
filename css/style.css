@@ -13,24 +13,6 @@ ul{
     margin: 0;
     padding:0 ;
 }
-/* small media query  */
-@media(min-width:768px){
-    .container{
-        width: 750px;
-    }
-}
-/* medium media query  */
-@media(min-width:992px){
-    .container{
-        width: 970px;
-    }
-}
-/* large media query */
-@media(min-width:1200px){
-    .container{
-        width: 1170px;
-    }
-}
 /* end global rules  */
 .container{
     margin-left: auto;
@@ -105,4 +87,17 @@ ul li:hover{
 .container button:hover{
     background-color: #cd9f32;
     transform: translateY(-2px);
+}
+@media(max-width:767px){
+    .container{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(90px,1fr));
+        
+    }
 }
