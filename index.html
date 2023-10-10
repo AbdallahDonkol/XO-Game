@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome file  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- normalization file to render all elements normally in the web page  -->
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dash-board">
+            <div>X O Game</div>
+            <div class="winner"></div>
+        </div>
+        <ul class="content">
+            <li id="box1" onclick="game(this.id)"></li>
+            <li id="box2" onclick="game(this.id)"></li>
+            <li id="box3" onclick="game(this.id)"></li>
+            <li id="box4" onclick="game(this.id)"></li>
+            <li id="box5" onclick="game(this.id)"></li>
+            <li id="box6" onclick="game(this.id)"></li>
+            <li id="box7" onclick="game(this.id)"></li>
+            <li id="box8" onclick="game(this.id)"></li>
+            <li id="box9" onclick="game(this.id)"></li>
+        </ul>
+        <button>New Game</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
